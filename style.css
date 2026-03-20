@@ -1,0 +1,216 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* headear start */
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:70px;
+    padding:15px;
+
+}
+.header-left{
+    display: flex;
+    align-items: center;
+}
+.header-left img{
+    width:100px;
+    margin-left: 15px;
+}
+
+.header i{
+    padding:0px 7px;
+    cursor:pointer;
+}
+.header-center{
+    display: flex;
+}
+
+.header-center form{
+    display:flex;
+    height:35px;
+    border: 1px solid white;
+}
+.header-center input{
+    width:500px;
+    padding:5px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+.header-center button{
+    height: 100%;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.searchmic{
+    display: flex;
+    align-items: center;
+    height:40px;
+    width:40px;
+    justify-content: center;
+    margin-left: 10px;
+    border-radius: 50%;
+    background-color: white;
+    
+}
+
+.searchmic:hover{
+    background-color: pink;
+}
+/* header end */
+
+/* Mainbody starts */
+
+/* Sidebar start */
+
+.mainbody{
+    height:calc(100vh-70px);
+    display:flex;
+    overflow:hidden;
+}
+
+.sidebar{
+    height: 100%;
+    width:230px;
+    background-color: white;
+    overflow-y: scroll;
+}
+
+.sidebarcategories{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    row-gap: 12px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.sidebarcategory{
+    display:flex;
+    align-items: center;
+    padding: 12px 25px;
+}
+
+.sidebarcategory span{
+    margin-left: 15px;
+}
+
+.sidebarcategory:hover{
+    background-color: beige;
+    cursor: pointer;
+}
+
+.sidebar::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+hr{
+    background-color:wheat ;
+    height: 1px;
+    border: none;
+}
+
+/* sidebarends */
+
+/* recommend starts */
+
+.recommend{
+    margin-top: 15px;
+
+}
+
+.recommend span{
+    margin-left: 10px;
+    width:50px;
+    height:100%;
+    background-color: beige;
+    border: 1px solid whitesmoke;
+    border-radius: 6px;
+    padding: 5px 5px;
+}
+
+.recommend span:hover{
+    cursor:pointer;
+    background-color: gray;
+}
+
+/* recommend ends  */ 
+
+/* video starts */
+
+.videos{
+    background-color: white;
+    width:100%;
+    height:100%;
+    padding:15px 25p;
+    border-top: 1pa solid whitesmoke;
+    overflow-y: scroll;
+    
+}
+
+.videoscontainer{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.video{
+    width:310px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    
+}
+
+.video-thumbnail{
+    width:100%;
+    padding:20px 30px;
+    object-fit: cover;
+    
+}
+
+.video-thumbnail img{
+    object-fit: cover;
+    height: 100%;
+    width:100%;
+    border:1px solid green;
+    border-radius: 15px;
+}
+
+.author img{
+    object-fit: cover;
+    border-radius: 50%;
+    height: 50px;
+    width:50px;
+    margin-right: 10px;
+    background-color: black;
+}
+
+.videodetails{
+    display: flex;
+    margin-top: 10px;
+}
+
+.title{
+    color:black;
+    line-height: 18px;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+.title a,span{
+    text-decoration: none;
+    font-size: 14px;
+    color:rgb(71, 62, 62);
+}
+
+
+/* video ends */
